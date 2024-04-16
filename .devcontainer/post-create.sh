@@ -21,7 +21,7 @@ git config --global alias.rollback "reset --soft HEAD~1"
 python3 -m venv .venv
 
 # Activate the virtual environment
-source venv/bin/activate
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
