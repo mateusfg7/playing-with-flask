@@ -17,5 +17,11 @@ git config --global alias.st "status -sb"
 git config --global alias.lg "log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30"
 git config --global alias.rollback "reset --soft HEAD~1"
 
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+source venv/bin/activate
+
 # Install dependencies
-pip3 install --user -r requirements.txt
+pip install -r requirements.txt
